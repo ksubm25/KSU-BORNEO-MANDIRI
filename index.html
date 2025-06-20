@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koperasi Serba Usaha Borneo Mandiri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Koperasi Serba Usaha Borneo Mandiri</h1>
+
+  <div class="form-section">
+    <h2>Form Pendaftaran Anggota Baru</h2>
+    <form id="formDaftar">
+      <label>Nama Lengkap</label>
+      <input type="text" id="nama" required />
+      <label>Alamat</label>
+      <input type="text" id="alamat" required />
+      <label>No. HP</label>
+      <input type="text" id="nohp" required />
+      <button type="submit">Daftar</button>
+      <p id="nomorAnggota"></p>
+    </form>
+  </div>
+
+  <div class="form-section">
+    <h2>Form Setoran</h2>
+    <form id="formSetoran">
+      <label>Nomor Anggota</label>
+      <input type="text" id="anggotaId" required />
+      <label>Jenis Setoran</label>
+      <select id="jenisSetoran">
+        <option value="wajib">Setoran Wajib</option>
+        <option value="sukarela">Setoran Sukarela</option>
+        <option value="pokok">Setoran Pokok</option>
+      </select>
+      <label>Jumlah (Rp)</label>
+      <input type="number" id="jumlah" required />
+      <button type="submit">Kirim Setoran</button>
+    </form>
+  </div>
+
+  <div class="form-section">
+    <h2>Form Penarikan / Pinjaman</h2>
+    <form id="formPinjam">
+      <label>Nomor Anggota</label>
+      <input type="text" id="idPinjam" required />
+      <label>Jenis</label>
+      <select id="jenisPinjam">
+        <option value="penarikan">Penarikan</option>
+        <option value="pinjaman">Pinjaman</option>
+      </select>
+      <label>Jumlah (Rp)</label>
+      <input type="number" id="jumlahPinjam" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
